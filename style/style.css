@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+:root {
+    --redish: #be3144;
+    --lightgreyish: #303841;
+    --darkgreyish: #232325;
+    --skybluwish: #45567d;
+    --whitney: #f0f0f0;
+}
+div#navbar {
+    position: fixed;
+    box-shadow: 2px 2px 2px 0.1px #0a0a0a;
+    width: 100%;
+    background-color: var(--redish);
+}
+
+div#navcontainer {
+    font-size: 1.2em;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+a.navlink {
+    text-align: center;
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 18px 20px;
+}
+
+a.navlink:hover {
+    background-color: var(--skybluwish);
+}
+div#heroface {
+    text-align: center;
+    background-color: var(--darkgreyish);
+    padding: 210px 0px;
+    color: var(--whitney);
+}
+div#portfolio_container{
+    padding: 60px 8px;
+    background-color: var(--skybluwish);
+    color: var(--whitney);
+}
+
+div.polaroid{
+    margin: 30px 0px;
+    border: 1px solid var(--darkgreyish);
+    text-align: center;
+    box-shadow: 2px 2px 2px 0.1px var(--darkgreyish);
+    flex: 100%;
+}
+
+.polaroid p{
+    background-color: var(--lightgreyish);
+    padding: 30px;
+}
+
+div#row{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+div#row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div#button{
+    width: max-content; /*"max-content" will also work*/
+    margin: 40px auto 20px auto;
+}
+div#button a{
+    text-decoration: none;
+    color: var(--whitney);
+    padding: 20px 20px;
+    background-color: var(--lightgreyish);
+}
+div#button a:hover {
+    background-color: var(--redish);
+}
+div#contactcontainer {
+    color: var(whitney);
+    padding: 100px 0px;
+    background-color: var(--lightgreyish);
+}
+
+div#contactcontainer .contactlink, div#contactcontainer h1, div#contactcontainer p{
+    text-decoration: none;
+    color: var(--whitney);
+}
+a.contactlink{
+    text-shadow: 2.5px 2.5px #0a0a0a;
+    font-size: 1.3em;
+    padding: 15px 30px;
+    align-content: space-around;
+    transition: transform 0.5s;
+}
+
+a.contactlink:hover{
+    transform: translateY(10px);
+}
+div#contacts{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div#footer{
+    color: var(--whitney);
+    background-color: var(--lightgreyish);
+    text-align: center;
+    border-top: 5px solid var(--redish);
+    padding: 30px;
+}
+div#footer p{
+    width: 100%;
+    padding: 15px 0px;
+}
+
+@media only screen and (min-width: 459px){
+    div#navcontainer {
+        justify-content: flex-end;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    div#portfolio_container > hr{max-width: 80%;}
+    
+    div.polaroid{
+        flex: 48%;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    div#portfolio_container > hr{max-width: 45%;}
+    
+    div.polaroid{
+        flex: 28%;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+}
