@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A simple portfolio site with html5 and CSS3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is a portfolio site">
+        <meta http-equiv="refresh" content="60">
+        <link rel="stylesheet" href="./style/style.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <div id="navcontainer">
+                <a href="#" class="navlink">About</a>
+                <a href="#" class="navlink">Work</a>
+                <a href="#" class="navlink">Contact</a>
+            </div>           
+        </div>
+        <div id="heroface">
+            <h1 style="font-size: 3em">Hey I am Simon</h1>
+            <p style="color: var(--redish); font-style:italic; margin: 10px; font-size: 1.6em">a web developer</p>
+        </div>
+        <div id="portfolio_container">
+            <h2 style="text-align: center; font-size: 2.2em">These are some of my projects</h2>
+            <hr style="width:99%; margin:auto"><hr> <!--border:1px solid var(--whitney)-->
+            <div id="row">
+                <div class="polaroid">
+                    <img src="./assets/tribute.jpg" alt="tribute_page" style="width:100%; height:400px"/>
+                    <div><p>Tribute Page</p></div>
+                </div>
+                <div class="polaroid">
+                    <img src="./assets/random-quote-machine.png" alt="random_quote_machine" style="width:100%; height:400px"/>
+                    <div><p>Random Quote Machine</p></div>
+                </div>
+                <div class="polaroid">
+                    <img src="./assets/calc.png" alt="Calculator" style="width:100%; height:400px"/>
+                    <div><p>Javascript Calculator</p></div>
+                </div>
+                <div class="polaroid">
+                    <img src="./assets/map.jpg" alt="Map" style="width:100%; height:400px"/>
+                    <div><p>Map</p></div>
+                </div>
+                <div class="polaroid">
+                    <img src="./assets/wiki.png" alt="Wiki" style="width:100%; height:400px; background-color: var(--lightgreyish);"/>
+                    <div><p>Wiki</p></div>
+                </div>
+                <div class="polaroid">
+                    <img src="./assets/tic-tac-toe.png" alt="tic-tac-toe" style="width:100%; height:400px; background-color: var(--lightgreyish);"/>
+                    <div><p>Tic-tac-toe</p></div>
+                </div>
+            </div>
+            <div id="button"><a href="#">Show all</a></div>   
+        </div>
+        <div id="contactcontainer">
+            <h1 style="text-align: center; font-size: 2.3em; font-weight: bold;">Let's work together...</h2>
+            <p style="text-align: center; font-style:italic">How do you take coffee?</p>
+            <div id="contacts">
+                <a href="#" class="contactlink">Facebook</a>
+                <a href="#" class="contactlink">Github</a>
+                <a href="#" class="contactlink">Twitter</a>
+                <a href="#" class="contactlink">Send a Mail</a>
+                <a href="#" class="contactlink">Call me</a>
+            </div>           
+        </div>
+        <div id="footer">
+            <p>**This is just a false portfolio. All the contact and details given are not real</p>
+            <p>@Created for freecodecamp</p>
+        </div>
+    </body>
+</html>
